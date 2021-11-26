@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">FirebaseAuthentication</string>
+    <string name="getCodeText">Получить код</string>
+    <string name="phoneHint">+7(xxx)xxx-xx-xx</string>
+    <string name="continueText">Продолжить</string>
+    <string name="enterCodeHint">Введите код</string>
+    <string name="resendText">Отправить еще раз</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firebaseCredentials">Учетные данные firebase</string>
+    <string name="backendResponse">Ответ от бэкенда</string>
+    <string name="loginPage">Login Page</string>
+    <string name="verifyCodePage">Code Verification Page</string>
+    <string name="profilePage">Profile Page</string>
 </resources>

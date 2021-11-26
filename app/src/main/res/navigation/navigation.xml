@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.firdavs.firebaseauthentication.ui.fragments.LoginFragment"
+        android:label="@string/loginPage"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_verifyCodeFragment"
+            app:destination="@id/verifyCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyCodeFragment"
+        android:name="com.firdavs.firebaseauthentication.ui.fragments.VerifyCodeFragment"
+        android:label="@string/verifyCodePage"
+        tools:layout="@layout/fragment_verify_code" >
+        <action
+            android:id="@+id/action_verifyCodeFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/verifyCodeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.firdavs.firebaseauthentication.ui.fragments.ProfileFragment"
+        android:label="@string/profilePage"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
